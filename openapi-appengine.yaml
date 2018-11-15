@@ -1,0 +1,6 @@
+swagger: "2.0"
+info:
+  description: "A simple Google Cloud Endpoints API example."
+  title: "Mobile App PoC"
+  version: "1.0.0"
+host: "bookself-project-211503.appspot.com"
