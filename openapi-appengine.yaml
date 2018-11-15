@@ -11,4 +11,15 @@ paths:
         "200":
           description: OK
       operationId: get_api
+      security:
+        - api_key: []
+#        - firebase: []
+
 host: "bookself-project-211503.appspot.com"
+
+securityDefinitions:
+  api_key:
+    type: "apiKey"
+    name: "key"
+    in: "query"
+    
