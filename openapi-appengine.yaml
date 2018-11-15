@@ -3,4 +3,12 @@ info:
   description: "A simple Google Cloud Endpoints API example."
   title: "Mobile App PoC"
   version: "1.0.0"
+paths: 
+  /api:
+    get:
+      summary: Hello world message 
+      responses:
+        "200":
+          description: OK
+      operationId: get_api
 host: "bookself-project-211503.appspot.com"
