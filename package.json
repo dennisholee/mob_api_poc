@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dennisholee/mob_api_poc#readme",
   "dependencies": {
+    "@google-cloud/pubsub": "^0.21.1",
     "express": "^4.16.4"
   },
   "devDependencies": {
