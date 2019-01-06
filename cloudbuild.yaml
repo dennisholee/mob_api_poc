@@ -1,0 +1,11 @@
+steps:
+- name: 'gcr.io/cloud-builders/npm'
+  id: INSTALL
+  args: ['install']
+  timeout: '500s'
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/dennisholee/mob_api_image', '.']
+images: ['gcr.io/dennisholee/mob_api_image']
+- name: 'gcr.io/cloud-builders/gcloud' 
+  args: ['app', 'deploy'] 
+  timeout: '1600s'
